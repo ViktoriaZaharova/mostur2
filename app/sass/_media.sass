@@ -1,0 +1,966 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px)
+  .slick-next
+    right: 15px
+
+  .slick-prev
+    left: 15px
+
+  .about-tour-slider-item
+    padding: 129px 55px 88px
+    .box-text
+      font-size: 16px
+      line-height: normal
+
+  .tours-rus-two:before
+    width: calc(100% - 30px)
+
+  .menu li
+    margin: 0 10px 0 0
+
+  .header-page .phone
+    font-size: 16px
+
+  .form-search
+    margin: 0 15px 0 auto
+
+  .check-in-option__item
+    padding: 15px
+    margin: 0
+    &:before
+      right: 0
+
+  .check-in-option
+    padding: 13px
+
+@media only screen and (max-width: 1200px)
+  .location
+    display: none
+
+  .cash
+    margin: 0 auto 0 30px
+
+  .list-social
+    justify-content: flex-start
+    padding: 0 0 32px
+    border-bottom: 1px solid #B0B0B0
+    margin: 0 0 16px
+
+  .footer-bottom
+    padding: 32px 0 20px
+    &:before
+      display: none
+
+  .list-dots li
+    margin: 0 16px 0 0
+    font-size: 12px
+    .copyright
+      font-size: 14px
+    &:after
+      display: none
+    a
+      color: #F65362
+      text-decoration: underline
+
+  .about-tour-slider-item
+    padding: 100px 55px 60px
+    h3
+      font-size: 30px
+
+  .form-search
+    margin: 0
+    order: 1
+
+  .header-page
+    .logo
+      max-width: 130px
+    .phone
+      margin: 0 auto 0 0
+      font-size: 20px
+
+  .page-section
+    padding: 67px 0 40px
+
+  .page-reviews
+    padding: 0 0 40px
+
+  .all-rating
+    margin: 16px 0 32px
+
+  .reviews-box
+    margin: 0 0 32px
+
+  .select-city-label
+    max-width: 80px
+
+  .btn-search
+    margin: 0 0 0 auto
+
+  .filter-tour-box-wrap
+    padding: 13px 20px
+
+  .page-tour
+    padding: 18px 0 0
+
+  .tour-slider-wrapper .tour-slider-max
+    max-width: 500px
+
+  .tour-slider-wrapper .tour-slider-info
+    width: calc(100% - 500px)
+    padding: 0 0 0 40px
+
+  .tour-slider-preview .tour-slider__item
+    max-width: 144px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .filter-tour-box-wrap
+    padding: 13px
+
+  .dropdown-menu
+    min-width: 300px
+
+  .ui-datepicker-multi-2 .ui-datepicker-group
+    width: 100%
+
+  .footer-menu
+    margin: 32px 0 0
+    font-size: 12px
+    li
+      margin: 0 0 8px
+      a
+        text-decoration: underline
+
+  .mail
+    font-size: 14px
+
+  .phone
+    font-size: 20px
+    margin: 0 0 8px
+
+
+  .footer-box
+    padding: 0
+    span
+      margin: 0 0 8px
+
+  .footer-top
+    padding: 24px 0 0
+
+  .popular-tours
+    &:before
+      display: none
+
+  .page-reviews
+    padding: 0
+
+  .page-certificates
+    padding: 0 0 40px
+
+  .form-certificate-wrap__box
+    margin: 0 0 48px
+    h3
+      margin: 0 0 24px
+
+  .form-certificate-wrap
+    margin: 12px 0 0
+
+  .form-certificate-item__total
+    margin: 40px 0 20px
+
+  .total-tour-wrap
+    margin: 30px 0 0
+
+  .form-payment-tour
+    .select-my
+      max-width: none
+
+    button
+      margin: 0
+
+  .check-in-option__item
+    padding: 0 10px 0 0
+    max-width: 33.3%
+    &:before
+      right: 10px
+
+  .custom-dropdown
+    width: 300px !important
+
+  .page-tour
+    .subtitle
+      font-size: 20px
+      margin: 0
+    h1
+      margin: 0 0 16px
+
+  .mini-info
+    margin: 0 0 18px
+
+  .list-advantages-tour
+    font-size: 16px
+    li
+      margin: 0 0 18px
+
+  .list-rating
+    li
+      margin: 0
+
+  .dates-tour__body
+    padding: 27px 9px 30px 27px
+
+  .dates-tour__bottom
+    padding: 13px 9px 15px 27px
+    .btn
+      margin: 20px 0 0
+
+  .tour-details-info__box
+    margin: 0 0 25px
+    padding: 0 0 55px
+    h2
+      margin: 0 0 20px
+
+  .page-tour
+    padding: 18px 0 0
+
+  .prices-tour
+    max-width: none
+
+  .tour-details-info__box-price
+    padding: 0
+    margin: 0 0 56px
+
+  .program-box
+    margin: 0 0 30px
+
+  .tour-slider-preview .tour-slider__item
+    max-width: 120px
+
+
+  .tour-slider-wrapper .tour-slider-max .slick-next
+    right: 0
+
+  .tour-slider-wrapper .tour-slider-max .slick-prev
+    left: 0
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .cash
+    order: 1
+    margin: 0 0 0 15px
+
+  .home-two .cash
+    margin: 0 0 0 15px
+
+  .safety
+    margin: 0 auto 0 0
+
+  .travels
+    max-width: 80px
+    width: 100%
+
+  .datepicker-bottom
+    flex-wrap: wrap
+    .text
+      width: 100%
+      padding: 0
+      margin: 20px 0 0
+
+  .menu-location li a
+    padding: 10px 15px
+
+  .list-checkbox li
+    margin: 0 0 20px
+
+  .dropdown-menu .btn-group
+    margin: 10px 0 0
+
+  main
+    padding: 160px 0 34px
+
+  .filter-tour
+    margin: 40px 0 90px
+
+  .tours-rus-col
+    display: none
+    &:nth-child(-n+4)
+      display: block
+
+  .tours-rus
+    margin: 40px 0
+
+  .about-tour-slider-item
+    min-height: 350px
+
+  .tours-section-item__col
+    max-width: 174px
+    width: 100%
+
+
+  .tours-section-img__img
+    height: 220px
+
+  .tours-section-item__title
+    position: absolute
+    margin: 0
+    z-index: 1
+    padding: 16px 30px
+    bottom: 0
+    left: 0
+    color: #fff
+    font-size: 14px
+    font-weight: bold
+
+  .home-two h1
+    font-size: 30px
+
+  .pagination
+    margin: 24px 0 0
+
+  .tours-rus-wrap
+    padding: 30px
+    h3
+      font-size: 26px
+    .box-text
+      font-size: 16px
+      line-height: normal
+
+  .cooperation-box
+    margin: 37px 0 0
+
+  .maps-section-box
+    max-width: 328px
+    margin: 43px 0 44px
+
+  .reviews-col
+    display: none
+    &:nth-child(-n+8)
+      display: block
+
+  .rassage-decoration__list-item
+    max-width: 208px
+
+  .page-checkout
+    padding: 0 0 40px
+
+  .page-section h1
+    font-size: 32px
+
+  .form-certificate .box-text
+    margin: 16px 0 26px
+
+  .hotel-variable-check
+    margin-right: 0
+    max-width: none
+
+  .check-in-option
+    padding: 0
+    border: none
+      radius: 0
+
+  .check-in-option__inp
+    border: none
+      radius: 0
+
+  .check-in-option__top-title
+    padding: 0
+
+  .check-in-option__inp:checked
+    border: none
+
+  .information-important-box
+    margin: 0 0 30px
+    h3
+      font-size: 16px
+
+  .information-important__list
+    font-size: 14px
+
+  .tour-details-info__box-price
+    margin: 55px 0
+
+  .gallery-tour-col
+    height: 180px
+
+  .prices-tour-box__row-top .prices-tour-box__head
+    font-size: 12px
+
+  .prices-tour-box__head .price
+    font-size: 14px
+    padding: 0 10px 0 30px
+
+  .mini-info
+    margin: 0
+
+  .gallery-tour__bottom
+    padding: 20px 0 10px
+
+  .tour-slider-wrapper .tour-slider-info
+    display: none
+
+  .tour-slider-wrapper .tour-slider-max
+    max-width: none
+
+  .tour-slider-info
+    margin: 32px 0 0
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+  .counter-slide
+    display: none
+
+  .modal-gallery-tour button.close
+    bottom: auto
+    top: 38px
+    right: 30px
+
+  .modal-gallery-tour .modal-body
+    padding: 40px 0
+
+  .tour-slider-max
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    .slick-prev
+      left: 40px
+    .slick-next
+      right: 40px
+
+  .tour-slider-wrapper .tour-slider-max .slick-prev
+    left: 40px
+
+  .tour-slider-wrapper .tour-slider-max .slick-next
+    right: 40px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 725px)
+  .rassage-decoration__list-item
+    max-width: none
+    margin: 0 0 16px
+
+@media only screen and (max-width: 650px)
+  .filter-tour-box span
+    font-size: 12px
+
+  .filter-tour-box h4
+    font-size: 13px
+
+  .btn-search
+    margin: 0 0 0 auto
+    width: 40px
+    height: 40px
+    min-width: 40px
+
+  .filter-tour-box-wrap:nth-last-child(2)
+    padding: 13px 55px 13px 20px
+
+  .filter-tour-menu li a
+    padding: 16px 24px
+
+  .prices-tour-box__head .price
+    padding: 0 10px
+
+@media only screen and (max-width: 576px)
+  header
+    padding: 4px 0
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+    background: #fff
+    &:before
+      display: none
+
+  .logo
+    padding: 4px 2px
+    border-radius: 0
+    background: transparent
+
+  .filter-tour-wrapper
+    background: transparent
+    flex-direction: column
+    align-items: flex-start
+
+  .filter-tour-box-wrap
+    width: 100%
+    margin: 0 0 16px
+    padding: 10px 16px
+    background: #fff
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+    border-radius: 4px
+    &:before, &:after
+      display: none
+    &:nth-last-child(2)
+      padding: 10px 16px
+
+  .btn-search
+    position: relative
+    margin: 8px auto 0
+    right: 0
+    top: 0
+    transform: none
+    width: 100%
+    height: 48px
+    border-radius: 100px
+    color: #fff
+    svg
+      display: none
+    &__text
+      display: flex
+      align-items: center
+      justify-content: center
+
+  .filter-tour-box
+    display: flex
+    align-items: center
+
+    h4
+      font-size: 14px
+      font-weight: 500
+    >span
+      display: none
+    &__icon
+      display: flex
+    .select2-container--default
+      display: block
+      height: 100%
+      width: 100% !important
+    .selection
+      display: block
+      width: 100%
+      .select2-selection
+        max-width: none
+    .dropdown-wrapper
+      display: none
+
+  .filter-tour-box__time
+    h4
+      display: none
+
+  .select-city-label
+    display: none
+
+  .select-city-label__mobile
+    display: block
+    position: relative
+    max-width: 100%
+    height: 100%
+    .select2-selection__rendered
+      font-size: 14px
+      font-weight: 500
+      color: #000
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+      color: #000
+      font-size: 14px
+      font-weight: 500
+
+
+  .filter-tour-menu
+    display: none
+
+  .filter-tour
+    margin: 40px 0 44px
+
+  main
+    padding: 130px 0 20px
+
+  h1
+    font-size: 32px
+
+  .subtitle
+    font-size: 18px
+
+  .travels
+    max-width: 65px
+
+  .main-bottom
+    align-items: center
+
+  .cash
+    margin: 0 0 0 11px
+    font-size: 9px
+    text-decoration: none
+
+  .cash-icon
+    max-width: 59px
+
+  .safety
+    font-size: 16px
+    p
+      max-width: 107px
+
+  .safety-icon
+    min-width: 33px
+    width: 33px
+    margin: 0 12px 0 0
+
+  .menu-document
+    li
+      display: none
+      &:first-child
+        display: block
+
+  .list-social
+    border: none
+    padding: 0
+    li
+      margin: 0 10px 0 0
+
+  .footer-bottom
+    padding: 24px 0 18px
+
+  .footer-menu
+    margin: 24px 0 0
+
+
+  .footer-top
+    padding: 16px 0 0
+
+  .phone
+    font-size: 16px
+
+  .footer-box
+    span
+      font-size: 13px
+
+  .tours-card__img
+    height: 199px
+
+  .tours-card__location, .tour-rating
+    display: none
+
+  .tours-card
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+    a.links-red
+      display: none
+
+  .mb-32
+    margin-bottom: 16px
+
+  .tours-rus
+    margin: 14px 0
+
+  .about-tour-slider-item
+    padding: 50px
+    min-height: 400px
+
+
+  .slick-arrow
+    width: 40px
+    height: 40px
+
+  .tours-section-slider
+    margin: 0 -15px 24px
+
+  .header .logo
+    filter: none
+
+  .home-two .filter-tour
+    margin: 40px 0 44px
+
+  .home-two h1
+    font-size: 32px
+
+  h2
+    font-size: 20px
+
+  .home-two
+    padding: 130px 0 20px
+
+  .header-page
+    padding: 8px 0
+    .logo
+      max-width: 88px
+
+  .page-section
+    padding: 40px 0
+    h1
+      font-size: 24px
+
+  .page-contacts
+    .box-text
+      margin: 32px 0 30px
+      font-size: 16px
+
+  .phone-contacts
+    font-size: 32px
+
+  .list-messengers
+    margin: 16px 0 0
+
+  .cooperation-box
+    margin: 56px 0 0
+    .box-text
+      margin: 24px 0
+
+  .map
+    position: relative
+    height: 303px
+
+  .maps-section-box
+    padding: 0
+    margin: 32px 0 0
+
+  .maps-section
+    padding: 0 0 40px
+
+  .reviews-box
+    margin: 0 0 24px
+
+  .all-rating
+    margin: 4px 0 32px
+
+  .page-reviews
+    padding: 0
+
+  .page-checkout
+    padding: 0 0 40px
+    .btn
+      max-width: none
+      width: 100%
+
+  .btn-next-checkout
+    margin: 32px 0 0
+
+  .page-reviews
+    .btn-load
+      margin: 8px auto 0
+
+  .page-certificates
+    padding: 0 0 40px
+
+  .payment-variable-box .label-checkbox
+    padding: 18px
+
+  .payment-variable-box .label-checkbox__text
+    padding: 0 0 0 16px
+
+  .interesting-articles
+    padding: 20px 0
+    h2
+      margin: 0 0 20px
+
+
+  .datepicker-wrapper
+    padding: 20px
+
+    .datepicker-top
+      padding: 0
+
+  .check-in-option__item
+    max-width: 100%
+    padding: 0
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    &:before
+      display: none
+
+  .button-section
+    margin: 30px 0 0
+    .btn
+      padding: 15px
+      font-size: 16px
+
+  .reviews-section
+    padding: 30px 0
+
+  .program-box
+    padding: 0 0 0 20px
+
+  .program-box__list li
+    font-size: 14px
+    flex-direction: column
+    align-items: flex-start
+    position: relative
+    padding: 0 0 24px 30px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 5px
+      background: $orange
+      width: 9px
+      height: 9px
+      border-radius: 50%
+      z-index: 1
+    &:after
+      content: ''
+      position: absolute
+      left: 4px
+      top: 5px
+      height: 100%
+      width: 0.3px
+      background: #B0B0B0
+    &:first-child, &:nth-child(2)
+      &:before
+        top: 10px
+      &:after
+        top: 10px
+
+    &:last-child
+      padding-bottom: 0
+      &:after
+        display: none
+
+  .program-box-time
+    max-width: none
+    margin: 0 0 4px
+    font-weight: 700
+    text-align: left
+
+  .program-box-description
+    padding: 0
+    font-size: 14px
+    &:after, &:before
+      display: none
+
+  .page-tour
+    padding: 0
+    .subtitle
+      font-size: 10px
+      margin: 0 0 14px
+    h1
+      font-size: 20px
+      margin: 0 0 14px
+
+  .mini-info-box, .mini-info .all-rating
+    font-size: 12px
+
+
+  .tour-details-info__box
+    border: none
+    padding: 0 0 40px
+    margin: 0
+
+  .list-advantages-tour li
+    font-size: 14px
+
+  .tour-details-info__box-price
+    margin: 40px 0
+
+  .prices-tour-box__row
+    width: 100%
+    &:first-child
+      .prices-tour-box__head
+        width: 33.3%
+        padding: 24px 8px 40px
+        &:first-child
+          display: none
+    &:nth-child(2)
+      order: -1
+      margin: 0 0 23px
+    .prices-tour-box__head:first-child
+      width: 100%
+
+  .prices-tour-box__row-name
+    min-height: 107px
+    padding: 0 0 0 124px
+    position: relative
+
+
+  .prices-tour-box__line
+    border: none
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+    .prices-tour-box__head
+      width: 33.3%
+      padding: 0
+      text-align: center
+      &:nth-child(2)
+        text-align: left
+      &:first-child
+        width: 100%
+    .price
+      padding: 0
+
+  .prices-tour-box__head:nth-child(even)
+    background: transparent
+
+  .prices-tour-box__border
+    border: none
+
+  .prices-tour-box
+    display: flex
+    flex-wrap: wrap
+    padding: 30px 0 26px
+    z-index: 1
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 0
+      transform: translate(-50%,0)
+      background: rgba(236, 236, 236, 0.25)
+      width: calc(100% + 40px)
+      height: 100%
+      z-index: -1
+
+  .prices-tour-box__img
+    display: flex
+
+  .gallery-tour
+    order: -1
+    margin: 0 0 20px
+
+  .gallery-tour-col
+    display: none
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    height: 271px
+    &:first-child
+      display: flex
+
+  .tour-slider-wrapper .tour-slider-max .tour-slider__item
+    height: 682px
+
+  .tour-slider-top
+    padding: 0 50px 0 0
+
+@media only screen and (max-width: 480px)
+  .logo
+    max-width: 94px
+    width: 100%
+
+  .about-tour-slider-item
+    min-height: 450px
+
+  .pagination li:first-child
+    margin: 0 20px 0 0
+
+  .pagination li:last-child
+    margin: 0 0 0 20px
+
+  .tour-slider-wrapper .tour-slider-max .tour-slider__item, .tour-slider-max .tour-slider__item
+    height: 500px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 340px)
+  .travels, .home-two .travels
+    max-width: 45px
+
+  .home-two h1
+    font-size: 26px
+
+  .list-social li
+    a
+      width: 24px
+      height: 24px
+
+  .hotel-variable-check__img
+    width: 85px
+    height: 90px
+
+  .hotel-variable-check__text
+    width: calc(100% - 85px)
+
+  .hotel-variable-check .links-details
+    margin: 0 10px 0 0
+
+  .custom-dropdown
+    width: 280px !important

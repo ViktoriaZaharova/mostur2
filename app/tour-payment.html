@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mос Тур Россия</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close-menu"></div>
+  <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+  <ul class="menu">
+    <li><a href="#">Туры</a></li>
+    <li><a href="#">Индивидуальные туры</a></li>
+    <li><a href="#">Подарочные сертификаты</a></li>
+    <li><a href="#" class="active">Контакты</a></li>
+  </ul>
+  <a href="tel:+79256423354 " class="phone">+7 (925) 642-33-54 </a>
+</div>
+
+<header class="header-page">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-6 col-md-3 col-sm-3 col-xl-2">
+        <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+      </div>
+      <div class="col-6 d-none d-xl-flex">
+        <ul class="menu">
+          <li><a href="#">Туры</a></li>
+          <li><a href="#">Индивидуальные туры</a></li>
+          <li><a href="#">Подарочные сертификаты</a></li>
+          <li><a href="#" class="active">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-9 col-sm-9 col-xl-4 d-none d-sm-flex align-items-center">
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Начать поиск" required></label>
+          <button type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+        <a href="tel:+79256423354 " class="phone">+7 (925) 642-33-54 </a>
+      </div>
+
+      <div class="col-6 d-flex d-sm-none">
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page-section page-certificates page-payment-tour">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Туры в Калининград</a></li>
+            <li class="breadcrumb-item"><a href="#">Страница Тура</a></li>
+            <li class="breadcrumb-item"><a href="#">Настройка Тура</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Оплата тура</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="col-12">
+        <form method="post" class="form-certificate form-payment-tour">
+          <div class="row">
+            <div class="col-12">
+              <h1>Оплата тура</h1>
+
+            </div>
+
+            <div class="col-12">
+              <div class="form-certificate-wrap__box form-certificate-wrap__box-total">
+                <h3>Итого</h3>
+                <div class="row">
+                  <div class="col-12 col-lg-7">
+
+                    <div class="total-position">
+                      <div class="total-position__icon"><img src="img/total-icon1.svg" alt=""></div>
+                      <p>Гастрономический поезд в Удмуртию «Вкусно Едем!»</p>
+                    </div>
+                    <div class="total-position">
+                      <div class="total-position__icon"><img src="img/total-icon2.svg" alt=""></div>
+                      <p>30 апреля 2021</p>
+                    </div>
+                    <div class="total-position">
+                      <div class="total-position__icon"><img src="img/total-icon3.svg" alt=""></div>
+                      <p>3 взрослых, 4 детей</p>
+                    </div>
+                    <div class="total-position">
+                      <div class="total-position__icon"><img src="img/total-icon4.svg" alt=""></div>
+                      <p>Park Inn by Radisson, 2 двухместных номера</p>
+                    </div>
+                    <a href="#" class="links-red links-edit text-decoration">Изменить данные</a>
+                  </div>
+
+                  <div class="col-12 col-lg-5">
+                    <div class="total-tour-wrap">
+                      <div class="total-sum">81 540 ₽</div>
+                      <a href="#" class="links-red links-code text-decoration">Промокод (сертификат)</a>
+                      <label class="label-code"><input type="text" placeholder="Введите промокод" name="code"></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12">
+              <div class="form-certificate-wrap">
+                <div class="row">
+                  <div class="col-12 col-md-10 col-lg-6">
+                    <div class="form-certificate-wrap__box">
+                      <h3>Контактная информация</h3>
+                      <label>
+                        <input type="text" placeholder="Ваше имя" name="name">
+                        <span class="tooltip-icon" data-toggle="tooltip" title="Подсказка вверху"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#info"></use></svg></span>
+                      </label>
+
+                      <label>
+                        <input type="text" placeholder="Фамилия" name="first_name">
+                      </label>
+
+                      <label class="label-phone">
+                        <span class="phone-code">
+                          <span class="phone-code__country"><img src="img/ru.png" alt=""></span>
+                          <span class="phone-code__num">+7</span>
+                        </span>
+                        <input type="text" placeholder="(999) 999-99-99" name="phone">
+                      </label>
+
+                      <label>
+                        <select name="select" class="select-my js-example-basic-single">
+                          <option value="Ваша регион / Город отправления">Ваша регион / Город отправления</option>
+                          <option value="Ваша регион / Город отправления">Ваша регион / Город отправления</option>
+                          <option value="Ваша регион / Город отправления">Ваша регион / Город отправления</option>
+                        </select>
+                      </label>
+
+                      <label>
+                        <input type="text" placeholder="E-mail" name="mail">
+                        <span class="tooltip-icon" data-toggle="tooltip" title="Подсказка вверху"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#info"></use></svg></span>
+                      </label>
+
+
+                      <label>
+                        <select name="select" class="select-my js-example-basic-single">
+                          <option value="Откуда о нас узнали?">Откуда о нас узнали?</option>
+                          <option value="Откуда о нас узнали?">Откуда о нас узнали?</option>
+                          <option value="Откуда о нас узнали?">Откуда о нас узнали?</option>
+                        </select>
+                      </label>
+
+                      <label><textarea name="comment" placeholder="Комментарий"></textarea></label>
+
+                      <label class="checkbox">
+                        <input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Я даю свое согласие на получение информации о скидках и новых экскурсиях</span>
+                      </label>
+
+                      <label class="checkbox">
+                        <input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Принимаю <a href="#" class="d-inline text-decoration links-red">правила возврата денежных средств</a> </span>
+                      </label>
+
+                      <label class="checkbox">
+                        <input type="checkbox" name="checkbox" class="checkbox-inp" checked>
+                        <span class="checkbox-custom"></span>
+                        <span class="checkbox-text">Принимаю <a href="#" class="d-inline text-decoration links-red">пользовательское соглашение и условия договора</a></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-10 col-lg-5 offset-lg-1">
+                    <div class="form-certificate-wrap__box payment-variable-box">
+                      <h3>Варианты оплаты</h3>
+
+                      <div class="box-text">
+                        <p>Данный тур (экскурсия) участвует в государственной программе <a href="#"
+                                                                                           class="d-inline text-decoration links-red links-doc">субсидии
+                          (кэшбэк) от Ростуризма</a></p>
+                      </div>
+
+                      <label class="rassage-decoration__list-item label-checkbox">
+                        <input type="radio" class="input-check" name="radio" checked>
+                        <span class="pay-icon"><img src="img/visa.png" alt=""></span>
+                        <span class="label-checkbox__text">
+                          <span class="rassage-decoration__list-item-title">Банковской картой «МИР»</span>
+                          <span>Для участия в программе, оплата должна производится только онлайн и банковской картой платёжной системы «МИР»</span>
+                        </span>
+                      </label>
+
+                      <label class="rassage-decoration__list-item label-checkbox">
+                        <span class="pay-icon"><img src="img/sber.png" alt=""></span>
+                        <input type="radio" class="input-check" name="radio">
+                        <span class="label-checkbox__text">
+                          <span class="rassage-decoration__list-item-title">Сбербанк Онлайн</span>
+                          <span>Платеж через личный кабинет для клиентов Сбербанка</span>
+                        </span>
+                      </label>
+
+                      <label class="rassage-decoration__list-item label-checkbox">
+                        <span class="pay-icon"><img src="img/pay.svg" alt=""></span>
+                        <input type="radio" class="input-check" name="radio">
+                        <span class="label-checkbox__text">
+                        <span class="rassage-decoration__list-item-title">На 4 месяца</span>
+                          <span>По вашим реквизитам мы выставим счёт для оплаты</span>
+                        </span>
+                      </label>
+
+
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-orange">Оформить заказ</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 order-lg-1">
+          <div class="footer-box">
+            <span>Многоканальный</span>
+            <a href="tel:+74951204774" class="phone">+7 (495) 120-47-74</a>
+            <a href="tel:+78005553603" class="phone">8 (800) 555-36-03</a>
+            <a href="mailto:zakaz@mos-tour.moscow" class="mail">zakaz@mos-tour.moscow</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-3 offset-md-2 offset-lg-1 d-none d-md-flex">
+          <ul class="footer-menu">
+            <li><a href="excursions.html">Все экскурсии</a></li>
+            <li><a href="tours.html">Все туры</a></li>
+            <li><a href="schoolchildren.html">Для школьников</a></li>
+            <li><a href="foreigners.html">Для иностранцев</a></li>
+            <li><a href="guides.html">Наши экскурсоводы</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-5 col-lg-4">
+          <ul class="footer-menu">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="document.html">Юридические документы</a></li>
+            <li><a href="payment.html">Способы оплаты</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="certificates.html">Подарочные сертификаты</a></li>
+            <li><a href="sights.html">Достопримечательности</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-xl-4 order-xl-1">
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#fb"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#twitter"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-xl-8">
+          <ul class="menu-document list-dots">
+            <li>
+              <div class="copyright">© 2006–2021 Компания «Мос-Тур»</div>
+            </li>
+            <li><a href="#">Конфиденциальность</a></li>
+            <li><a href="#">Условия</a></li>
+            <li><a href="#">Реквизиты компании</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="modalDetails1" tabindex="-1" aria-labelledby="modalDetails1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-subtitle">Тур в Калининград</div>
+        <h5 class="modal-title">«Янтарный ветер Балтики»</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tour-details-modal">
+          <div class="tour-details-modal-box">
+            <h4>Длительность</h4>
+            <ul class="list-time-tours list-dots">
+              <li>1 дня</li>
+              <li>2 дня / 1 ночь</li>
+              <li>3 дня / 2 ночь</li>
+              <li>4 дня / 3 ночи</li>
+              <li>5 дней / 4 ночи</li>
+              <li>6 дней / 5 ночей</li>
+              <li>7 дней / 6 ночей</li>
+              <li>8 дней / 7 ночей</li>
+            </ul>
+          </div>
+
+          <div class="tour-details-modal-box">
+            <h4>Сезон</h4>
+            <ul class="list-season-tours">
+              <li>Январь</li>
+              <li>Февраль</li>
+              <li>Март</li>
+              <li>Апрель</li>
+              <li>Май</li>
+              <li>Июнь</li>
+              <li>Июль</li>
+              <li>Август</li>
+              <li>Сентябрь</li>
+              <li>Октябрь</li>
+              <li>Ноябрь</li>
+              <li>Декабрь</li>
+            </ul>
+          </div>
+
+          <div class="tour-details-modal-box">
+            <h4>Преимущества</h4>
+            <ul class="list-dot">
+              <li>Фирменный двухэтажный поезд</li>
+              <li>Завтрак на веранде купеческой дачи</li>
+              <li>Гастрономические экскурсии</li>
+              <li>Мастер-классы</li>
+              <li>Дегустации национальных блюд</li>
+              <li>Ужины в популярных ресторанах</li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn btn-orange btn-details">Перейти на страницу тура</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDetails2" tabindex="-1" aria-labelledby="modalDetails2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-subtitle">Тур в Калининград</div>
+        <h5 class="modal-title">«Янтарный ветер Балтики»</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tour-details-modal">
+          <div class="tour-details-modal-box">
+            <h4>Преимущества</h4>
+            <ul class="list-dot">
+              <li>Фирменный двухэтажный поезд</li>
+              <li>Завтрак на веранде купеческой дачи</li>
+              <li>Гастрономические экскурсии</li>
+              <li>Мастер-классы</li>
+              <li>Дегустации национальных блюд</li>
+              <li>Ужины в популярных ресторанах</li>
+            </ul>
+          </div>
+
+          <a href="#" class="btn btn-orange btn-details">Перейти на страницу тура</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,3509 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 16px
+  box-sizing: border-box
+  font-family: $default-font
+  height: 55px
+  width: 100%
+  background: rgba(236, 236, 236, 0.5)
+  border: 1px solid #B0B0B0
+    radius: 4px
+  font-size: 14px
+  letter-spacing: 0.2px
+  color: #6B6B6B
+
+  &::placeholder
+    color: #6B6B6B
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 24px
+  position: relative
+
+textarea
+  padding: 18px 16px
+  height: 149px
+
+button, .btn
+  outline: none
+  border: none
+    radius: 0
+  padding: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.container
+  max-width: 1290px
+
+.text-right
+  text-align: right
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+.d-inline
+  display: inline-block
+
+.text-decoration
+  text-decoration: underline
+
+.color-black
+  color: #000000
+
+.links-red
+  letter-spacing: 0.2px
+  font-size: 14px
+  color: #F65362
+
+  &:hover
+    color: $orange
+
+h1
+  font-size: 34px
+  font-weight: 800
+
+h2
+  font-size: 24px
+  font-weight: bold
+  letter-spacing: 0.3px
+  color: #000000
+
+.subtitle
+  font-size: 20px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  outline: none
+  border-radius: 30px
+  padding: 10px 20px
+  letter-spacing: 0.3px
+  font-size: 14px
+  font-weight: bold
+  width: fit-content
+  border: none
+
+  &:hover, &:focus
+    outline: none
+
+.btn-orange
+  background: $orange
+  color: #fff
+
+  &:hover
+    background: $red
+    color: #fff
+
+.btn-grey
+  background: #6B6B6B
+  color: #fff
+  padding: 8px 16px
+
+  &:hover
+    background: $orange
+    color: #fff
+
+.btn-border
+  width: 100%
+  border: 1px solid #F65362
+    radius: 6px
+  color: #F65362
+  font-size: 13px
+  font-weight: 500
+  padding: 6px
+
+.btn-group
+  .btn
+    border-radius: 6px
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
+  border-radius: 6px
+
+.pos-r
+  position: relative
+
+.mb-32
+  margin-bottom: 32px
+
+.mb-16
+  margin-bottom: 16px
+
+.w100
+  width: 100%
+
+.border-red
+  border: 1px solid #F65362
+
+.bg-gradient
+  background: $gradient
+  color: #fff
+
+.slider-nav
+  width: 100%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 1290px
+  z-index: 1
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  position: absolute
+  bottom: 30px
+  z-index: 2
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  li
+    margin: 0 12px 0 0
+    border-radius: 50%
+    width: 8px
+    height: 8px
+    transition: .3s ease
+    cursor: pointer
+    background: rgba(255, 255, 255, 0.5)
+
+    button
+      display: none
+
+    &:last-child
+      margin: 0
+
+  .slick-active
+    background: #fff
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  z-index: 1
+  outline: none
+  cursor: pointer
+  transition: .3s ease
+  width: 48px
+  height: 48px
+  border-radius: 50%
+  background: #fff
+  border: none
+  visibility: visible
+
+  .svg-icon
+    width: 24px
+    height: 24px
+    fill: #111
+
+  &:hover
+    background: $red
+
+    .svg-icon
+      fill: #fff
+
+.slick-prev
+  left: -40px
+
+.slick-next
+  right: -40px
+
+.slick-disabled
+  opacity: 0
+  visibility: hidden
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+
+  letter-spacing: 0.3px
+  font-size: 14px
+  color: #000
+
+
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  cursor: pointer
+  width: 20px
+  height: 20px
+  min-width: 20px
+  margin: 0 32px 0 0
+  position: relative
+  border: 1px solid #6B6B6B
+    radius: 4px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    transition: .3s ease
+    width: 14px
+    height: 12px
+
+.checkbox-inp:checked + .checkbox-custom
+  background: #FF7337
+  border-color: $orange
+
+  &:before
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 100%
+
+.list-checkbox
+  width: 100%
+  padding: 0 32px
+  margin: 0 0 27px
+
+  li
+    margin: 0 0 34px
+
+    &:last-child
+      margin: 0
+
+
+//header
+header
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 3
+  width: 100%
+  padding: 40px 0
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 6px
+    background: linear-gradient(129.54deg, #F0B84B -74.11%, #FF005E 102.85%)
+
+  .phone
+    background: #FF7337
+    color: #fff
+    border-radius: 30px
+    padding: 10px 20px
+    font-size: 14px
+    font-weight: bold
+    margin: 0 0 0 auto
+    width: fit-content
+
+    &:hover
+      color: #fff
+
+.logo
+  background: #fff
+  border-radius: 5px
+  padding: 11px
+  display: flex
+  align-items: center
+  justify-content: center
+  width: fit-content
+
+.links-clear
+  text-decoration: underline
+  color: #B0B0B0
+  font-size: 14px
+
+  &:hover
+    color: $orange
+
+.font700
+  font-weight: 700
+
+//main
+main
+  padding: 190px 0 67px
+  position: relative
+  color: #fff
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(17, 17, 17, 0.1)
+
+  .container
+    z-index: 3
+    position: relative
+
+.home
+  background: url("../img/bg1.png") no-repeat center
+    size: cover
+
+.filter-tour
+  margin: 68px 0 120px
+
+.main-bottom
+  width: 100%
+  display: flex
+  align-items: flex-end
+  flex-wrap: wrap
+
+.safety
+  display: flex
+  align-items: center
+  font-size: 20px
+  letter-spacing: 0.3px
+
+  p
+    max-width: 123px
+    width: 100%
+
+.safety-icon
+  width: 50px
+  min-width: 50px
+  display: flex
+  align-items: center
+  margin: 0 18px 0 0
+
+.cash
+  margin: 0 0 0 63px
+  letter-spacing: 0.2px
+  text-decoration: underline
+
+  &-icon
+    max-width: 84px
+    width: 100%
+    margin: 8px 0 0
+
+.location
+  display: flex
+  align-items: center
+  margin: 0 37px 0 auto
+  font-size: 18px
+  font-weight: 600
+
+  .svg-icon
+    fill: #fff
+
+  p
+    text-decoration: underline
+
+.location-icon
+  width: 14px
+  height: 14px
+  min-width: 14px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 8px 0 0
+
+.filter-tour-menu
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+  font-size: 15px
+  font-weight: 600
+
+  li
+    margin: 0 4px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #fff
+      background: rgba(17, 17, 17, 0.5)
+      border-radius: 8px 8px 0px 0px
+      padding: 16px 32px
+      text-align: center
+
+.btn-search
+  background: $orange
+  fill: #fff
+  border-radius: 50%
+  width: 48px
+  height: 48px
+  min-width: 48px
+  padding: 0
+  margin: 0 11px 0 auto
+  position: absolute
+  right: 11px
+  top: 50%
+  transform: translate(0, -50%)
+
+  &:hover
+    background: $red
+
+  .svg-icon
+    width: 24px
+    height: 24px
+
+.filter-tour-wrapper
+  width: 100%
+  background: #fff
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+  border-radius: 32px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: -6px auto 0
+  position: relative
+  z-index: 1
+
+
+.dropdown-menu
+  background: #fff
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
+  border-radius: 24px
+  border: none
+  min-width: 384px
+  margin: 12px 0 0
+  padding: 32px 0
+
+  .btn-group
+    padding: 0 32px
+    margin: 20px 0 0
+    width: 100%
+    align-items: center
+    justify-content: flex-end
+
+    .btn
+      margin: 0 0 0 32px
+      width: fit-content
+      flex: inherit
+
+.dropdown-menu__body
+  padding: 0 32px
+
+.filter-tour-box-wrap
+  padding: 13px 24px
+  flex: auto
+  position: relative
+  cursor: pointer
+
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+    width: 1px
+    height: 32px
+    background: #DEDEDE
+
+  &:nth-last-child(2)
+    padding: 13px 72px 13px 24px
+
+    &:after
+      display: none
+
+  &:before
+    content: ''
+    position: absolute
+    box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 24px rgba(51, 51, 51, 0.24)
+    background: rgba(#fff, .43)
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border-radius: 32px
+    z-index: -1
+    opacity: 0
+    visibility: hidden
+    transition: .3s ease
+
+.filter-tour-box-wrap.show
+  &:before
+    opacity: 1
+    visibility: visible
+
+  &:after
+    display: none
+
+.filter-tour-box
+  color: #000
+
+  span
+    letter-spacing: 0.1px
+    display: inline-block
+    font-size: 13px
+    color: #6B6B6B
+
+  h4
+    font-size: 14px
+    letter-spacing: 0.3px
+
+  &:after
+    display: none
+
+  &__icon
+    display: none
+    align-items: center
+    justify-content: center
+    width: 16px
+    height: 16px
+    margin: 0 0 0 auto
+
+.btn-search__text
+  display: none
+
+.menu-location
+  letter-spacing: 0.3px
+
+  li
+    a
+      padding: 16px 40px
+      color: #000000
+
+      &:hover
+        background: #F1F1F1
+
+.number-of-guests
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 25px
+  padding: 0 0 25px
+  border-bottom: 1px solid #DEDEDE
+  font-size: 14px
+  letter-spacing: 0.2px
+
+  &:last-child
+    padding: 0
+    margin: 0
+    border: none
+
+  h4
+    letter-spacing: 0.3px
+    font-size: 16px
+    color: #111111
+
+  span
+    display: inline-block
+    color: #6B6B6B
+
+.amount
+  margin: 0 0 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+
+  input
+    height: 30px
+    background: transparent
+    width: 42px
+    border: none
+    text-align: center
+    padding: 0
+    letter-spacing: 0.3px
+    font-size: 16px
+    color: #111
+
+  span
+    cursor: pointer
+    transition: .3s ease
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    width: 36px
+    height: 36px
+    min-width: 36px
+    border: 1px solid #B0B0B0
+      radius: 50%
+
+    .svg-icon
+      width: 16px
+      height: 16px
+      fill: #B0B0B0
+
+    &:hover
+      border-color: #111
+
+      .svg-icon
+        fill: #111
+
+
+.dropdown-menu-calendar
+  min-width: 805px
+  margin: 0
+
+.show > .dropdown-menu-calendar
+  top: 100% !important
+  left: 50% !important
+  transform: translate(-50%, 0) !important
+
+.datepicker-bottom
+  display: flex
+  align-items: flex-start
+  padding: 24px 0 0
+  color: #6B6B6B
+  font-size: 14px
+  letter-spacing: 0.2px
+  border-top: 1px solid #DEDEDE
+
+  .text
+    width: calc(100% - 64px)
+    padding: 0 0 0 19px
+
+.logo-company
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 64px
+  height: 64px
+  padding: 15px
+  background: #F1F1F1
+
+.datepicker-top
+  padding: 0 0 25px
+  width: 100%
+
+.ui-widget.ui-widget-content
+  border: none
+    radius: 0
+  width: 100% !important
+
+.ui-datepicker
+  padding: 0
+
+  .ui-datepicker-header
+    border: none
+    padding: 0
+    background: transparent
+    display: flex
+    align-items: center
+    margin: 0 0 24px
+
+.ui-datepicker .ui-datepicker-title
+  color: #000000
+  font-size: 16px
+  font-weight: normal
+  font-family: $default-font
+  margin: 0 auto
+
+.ui-datepicker-month
+  text-transform: lowercase
+
+.ui-datepicker-calendar
+  width: 100%
+  margin: 0 auto
+
+.ui-datepicker .ui-datepicker-prev
+  left: 0
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next
+  top: 0
+  width: 16px
+  height: 16px
+  position: relative
+  border: none
+    radius: 0
+  cursor: pointer
+
+  &:hover, &:focus
+    border: none
+    background: transparent
+
+.ui-datepicker .ui-datepicker-prev span
+  background: url("../img/arrow-left.svg") no-repeat center
+    size: 100%
+
+.ui-datepicker .ui-datepicker-next
+  right: 0
+  order: 1
+
+  span
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: 100%
+
+.ui-datepicker th
+  font-weight: 600
+  font-size: 12px
+  padding: 0 0 12px
+  color: #6B6B6B
+  letter-spacing: 0.1px
+  text-transform: lowercase
+
+.ui-datepicker table
+  font-size: 14px
+  font-family: $default-font
+  text-align: center
+
+.ui-datepicker-multi .ui-datepicker-group table
+  margin: 0 auto
+  width: 100%
+
+.ui-datepicker-multi-2
+  .ui-datepicker-group
+    width: 45%
+
+  .ui-datepicker-group-last
+    float: right
+
+.ui-datepicker td span, .ui-datepicker td a
+  text-align: center
+  //padding:
+  border: none
+    radius: 8px
+  padding: 12px 0
+  color: #111111
+  font-size: 14px
+  background: transparent
+  letter-spacing: 0.3px
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  border-color: transparent
+
+.ui-datepicker td
+  padding: 0
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+  background: transparent
+  color: #111111
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+  border: 1px solid #F65362
+  background: transparent
+  color: #111111
+  font-size: 16px
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+  color: #111
+
+.btn-burger
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 auto
+  cursor: pointer
+
+  span
+    background: #6B6B6B
+    border-radius: 2px
+    width: 22px
+    height: 2px
+    margin: 0 0 4px
+
+    &:last-child
+      margin: 0
+
+//tours-rus
+.tours-rus
+  margin: 40px 0 0
+
+.tours-card
+  width: 100%
+  position: relative
+  background: #fff
+  border-radius: 12px
+  padding: 8px 8px 16px
+  height: 100%
+  transition: .3s ease
+
+  &__img
+    width: 100%
+    height: 279px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    border-radius: 12px
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__body
+    padding: 0 8px
+    margin: 4px 0 0
+
+  &__location
+    width: 100%
+    margin: 4px 0
+    letter-spacing: 0.2px
+    font-size: 14px
+    color: #000000
+    line-height: 21px
+
+    &:hover
+      color: $orange
+
+  &__title
+    color: #000
+    letter-spacing: 0.3px
+    font-size: 16px
+    line-height: 24px
+    font-weight: 500
+
+    &:hover
+      color: $orange
+
+  .slick-dots
+    bottom: 17px
+
+    li
+      width: 6px
+      height: 6px
+      margin: 0 5px 0 0
+
+  &:hover
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 16px rgba(51, 51, 51, 0.08)
+
+.price
+  margin: 4px 0
+  width: 100%
+  font-weight: bold
+  color: #111
+  font-size: 16px
+  line-height: 24px
+
+.tours-card-labels
+  position: absolute
+  z-index: 1
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  top: 24px
+  left: 24px
+  text-transform: uppercase
+  letter-spacing: 0.3px
+  font-size: 14px
+  color: #6B6B6B
+  line-height: 22px
+
+  li
+    margin: 0 0 8px
+    border-radius: 14px
+    padding: 2px 8px
+
+    &:last-child
+      margin: 0
+
+.tour-rating
+  display: flex
+  align-items: center
+  letter-spacing: 0.2px
+  font-size: 14px
+  color: #111
+
+  .svg-icon
+    margin: 0 4px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    fill: #F65362
+
+  p
+    display: flex
+    align-items: center
+    position: relative
+
+    &:before
+      content: ''
+      margin: 0 10px
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 3px
+      height: 3px
+      background: #111
+      border-radius: 50%
+
+//about-tour
+.about-tour
+  background: #111111
+
+.about-tour-slider-item
+  width: 100%
+  position: relative
+  padding: 129px 0 88px
+  color: #fff
+  z-index: 1
+  min-height: 455px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    background: linear-gradient(89.94deg, rgba(0, 24, 47, 0.76) 12.63%, rgba(0, 24, 47, 0.76) 12.64%, rgba(3, 33, 61, 0.39) 40.42%, rgba(255, 255, 255, 0) 63.93%, rgba(255, 255, 255, 0) 63.93%)
+
+  .container
+    position: relative
+    z-index: 2
+
+  h3
+    font-size: 40px
+    font-weight: bold
+
+.about-tour-slider
+  position: relative
+  z-index: 1
+
+  .box-text
+    letter-spacing: 0.3px
+    font-size: 20px
+    line-height: 30px
+    margin: 24px 0 32px
+
+.about-tour-slider__bg
+  width: 100%
+  height: 100%
+  object-fit: cover
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: -1
+
+
+//tours-section
+.tours-section
+  margin: 40px 0
+
+
+.tours-section-item
+  margin: 32px 0 0
+  letter-spacing: 0.3px
+  font-size: 20px
+  color: #000
+
+  &:hover
+    color: $orange
+
+    .tours-section-img__img
+      img
+        transform: scale(1.2, 1.2)
+
+.tours-section-img__img
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 100%
+  height: 325px
+  border-radius: 12px
+
+  img
+    border-radius: 12px
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition: 1s ease-in-out
+
+.tours-section-item__title
+  margin: 16px 0 0
+  display: block
+
+//footer
+footer
+  background: #ECECEC
+
+.menu-document
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  letter-spacing: 0.3px
+
+  li
+    a
+      letter-spacing: 0.2px
+      text-decoration: underline
+      color: #111
+
+      &:hover
+        color: $orange
+
+.list-dots
+  li
+    display: flex
+    align-items: center
+
+    &:after
+      content: ''
+      display: inline-block
+      border-radius: 50%
+      background: #111111
+      width: 3px
+      height: 3px
+      margin: 0 10px
+
+    &:last-child
+      &:after
+        display: none
+
+.list-social
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  margin: 0 0 0 auto
+
+  li
+    margin: 0 16px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 32px
+      height: 32px
+
+      &:hover
+        fill: $orange
+
+.footer-bottom
+  padding: 40px 0
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%, 0)
+    max-width: 1264px
+    width: 100%
+    height: 1px
+    background: #B0B0B0
+
+.footer-top
+  padding: 40px 0 20px
+
+.footer-menu
+  margin: 0 0 20px
+  font-size: 14px
+  letter-spacing: 0.2px
+
+  li
+    margin: 0 0 16px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #111
+
+      &:hover
+        color: $orange
+
+.footer-box
+  padding: 24px 0 0
+
+  span
+    font-size: 14px
+    margin: 0 0 16px
+    letter-spacing: 0.2px
+    display: inline-block
+
+.phone
+  font-weight: 600
+  color: #000
+  margin: 0 0 16px
+  font-size: 24px
+
+  &:hover
+    color: $orange
+
+.mail
+  letter-spacing: 0.2px
+  color: #F65362
+  text-decoration: underline
+
+  &:hover
+    color: $orange
+
+//modal
+.modal-dialog
+  max-width: 492px
+  border: none
+    radius: 16px
+
+
+.modal-content
+  border: none
+  color: #000
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
+
+.modal-header
+  padding: 16px 24px 8px 40px
+  flex-wrap: wrap
+  border-bottom: 1px solid #DEDEDE
+
+  .close
+    position: absolute
+    width: 24px
+    height: 24px
+    top: 24px
+    right: 24px
+    padding: 0
+    fill: #6B6B6B
+    z-index: 1
+    opacity: 1
+    margin: 0
+
+.modal-subtitle
+  letter-spacing: 0.3px
+  font-size: 14px
+  width: 100%
+  font-weight: 500
+  margin: 0 0 4px
+
+.modal-title
+  width: 100%
+  letter-spacing: 0.3px
+  font-size: 20px
+  font-weight: 500
+
+.modal-body
+  padding: 16px 20px 24px 40px
+
+.tour-details-modal-box
+  margin: 0 0 16px
+  font-size: 14px
+  letter-spacing: 0.2px
+
+  h4
+    font-weight: 500
+    width: 100%
+    margin: 0 0 8px
+    letter-spacing: 0.3px
+
+.list-dot
+  li
+    margin: 0 0 10px
+    position: relative
+    padding: 0 0 0 32px
+
+    &:before
+      content: ''
+      position: absolute
+      width: 4.5px
+      height: 4.5px
+      border-radius: 50%
+      background: $orange
+      top: 50%
+      left: 10px
+      transform: translate(0, -50%)
+
+.btn-details
+  max-width: 250px
+  width: 100%
+  margin: 0 auto
+  padding: 10px 20px
+  border-radius: 100px
+
+.list-season-tours
+  letter-spacing: 0.1px
+  font-size: 13px
+  color: #111111
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  li
+    margin: 0 8px 8px 0
+    border: 1px solid #B0B0B0
+      radius: 4px
+    padding: 2.5px 8px
+
+.list-time-tours
+  font-size: 13px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  li
+    margin: 0 0 6px
+
+.home-two
+  padding: 145px 0 67px
+  background: url("../img/bg2.jpeg") no-repeat center
+    size: cover
+
+  h1
+    font-size: 50px
+
+  .filter-tour
+    margin: 30px 0 135px
+
+  .travels
+    max-width: 63px
+
+  .safety-icon
+    width: 34px
+    min-width: 34px
+
+  .safety
+    font-size: 14px
+    font-weight: 500
+
+    p
+      max-width: 100px
+
+  .main-bottom
+    align-items: center
+
+  .cash
+    margin: 0 auto 0 43px
+
+.header
+  .logo
+    background: transparent
+    padding: 0
+    border-radius: 0
+    filter: brightness(0) invert(1)
+
+.home-three
+  background: url("../img/bg1.png") no-repeat center
+    size: cover
+
+  h1
+    font-size: 34px
+
+  .filter-tour
+    margin: 90px 0
+
+//breadcrumb
+.breadcrumb
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  background: transparent
+  padding: 0
+  border-radius: 0
+  margin: 30px 0
+  font-size: 12px
+  color: #6B6B6B
+  letter-spacing: 0.2px
+
+  a
+    text-decoration: underline
+    color: #F65362
+
+.breadcrumb-item + .breadcrumb-item::before
+  content: ''
+  background: url("../img/arrow-right.svg") no-repeat center
+    size: 100%
+  width: 16px
+  height: 16px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 0
+  margin: 0 5px
+
+.breadcrumb-item + .breadcrumb-item
+  padding: 0
+  display: flex
+  align-items: center
+
+.mt-0
+  margin-top: 0
+
+.tours-rus-wrap
+  width: 100%
+  margin: 0 0 40px
+  position: relative
+  background: #111111
+  border-radius: 30px
+  overflow: hidden
+  padding: 86px 105px 50px
+
+  h3
+    font-weight: bold
+    font-size: 40px
+    margin: 0 0 19px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(89.84deg, rgba(0, 28, 54, 0.81) 0.11%, rgba(255, 255, 255, 0) 67.97%)
+    z-index: 1
+
+  &__body
+    position: relative
+    width: 100%
+    z-index: 2
+    max-width: 510px
+    color: #fff
+
+  .box-text
+    font-weight: 500
+    font-size: 20px
+    letter-spacing: 0.3px
+    line-height: 30px
+    margin: 0 0 33px
+
+.tours-rus-wrap__bg
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.tours-rus-two
+  position: relative
+  padding: 0 0 48px
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  font-size: 14px
+  font-weight: 500
+
+  li
+    margin: 0 20px 0 0
+
+    span
+      border: none
+      width: 32px
+      height: 32px
+      border-radius: 50%
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+
+    a
+      width: 32px
+      height: 32px
+      border: none
+        radius: 50%
+      color: #111111
+      letter-spacing: 0.3px
+      padding: 0
+      display: flex
+      align-items: center
+      justify-content: center
+
+      &:hover
+        color: $orange
+
+    &:first-child
+      margin: 0 40px 0 0
+
+      a
+        width: 24px
+        height: 24px
+        border-radius: 0
+
+    &:last-child
+      margin: 0 0 0 40px
+
+      a
+        width: 24px
+        height: 24px
+        border-radius: 0
+
+    .disabled
+      fill: #DEDEDE
+
+  .active
+    .page-link
+      background: #FEA681
+      color: #fff
+
+.popular-tours
+  padding: 40px 0 20px
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%, 0)
+    max-width: 1264px
+    width: 100%
+    height: 1px
+    background: #B0B0B0
+
+  h2
+    font-size: 18px
+    font-weight: 500
+
+.popular-tours-slider
+  margin: 20px 0 0
+
+  .tours-card
+    margin: 20px auto
+
+  .slick-arrow
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
+    background: #fff
+    border-radius: 50%
+
+    &:hover
+      svg
+        fill: $orange
+
+  .slick-prev
+    left: -24px
+
+  .slick-next
+    right: -24px
+
+  .tours-card
+    max-width: 400px
+
+//pages
+.header-page
+  position: relative
+  padding: 16px 0 17px
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.03)
+  background: #fff
+
+  &:before
+    display: none
+
+  .logo
+    background: transparent
+    padding: 0
+    border-radius: 0
+    max-width: 119px
+
+  .container-fluid
+    max-width: 1410px
+
+  .phone
+    background: transparent
+    padding: 0
+    border-radius: 0
+    color: #191919
+    font-size: 18px
+    font-weight: bold
+    letter-spacing: 0.3px
+    margin: 0
+
+.form-search
+  display: flex
+  align-items: center
+  max-width: 201px
+  width: 100%
+  position: relative
+  margin: 0 23px 0 auto
+
+  label
+    width: 100%
+    margin: 0
+
+  input
+    width: 100%
+    height: 48px
+    border: 1px solid #DEDEDE
+      radius: 100px
+    background: #fff
+    letter-spacing: 0.3px
+    font-size: 14px
+    font-family: $default-font
+    color: #000
+    padding: 0 48px 0 24px
+
+    &::placeholder
+      color: #000
+
+  button
+    position: absolute
+    right: 0
+    top: 0
+    width: 48px
+    height: 48px
+    background: $orange
+    fill: #fff
+    border-radius: 50%
+    padding: 0
+    border: none
+    display: flex
+    align-items: center
+    justify-content: center
+
+    svg
+      width: 24px
+      height: 24px
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  letter-spacing: 0.3px
+  font-size: 15px
+
+  li
+    margin: 0 29px 0 0
+
+    a
+      color: #000
+      position: relative
+
+      &:hover
+        color: $orange
+
+    .active
+      font-weight: bold
+
+      &:before
+        content: ''
+        position: absolute
+        left: 50%
+        top: -9px
+        transform: translate(-50%, 0)
+        background: #FF7337
+        width: 8px
+        height: 8px
+        border-radius: 50%
+
+.page-section
+  padding: 110px 0 73px
+
+  h1
+    font-size: 40px
+
+.page-contacts
+  h1
+    margin: 0
+
+  .box-text
+    font-size: 18px
+    margin: 43px 0 32px
+
+.phone-contacts
+  font-size: 48px
+  color: #F65362
+  font-weight: 500
+
+  &:hover
+    color: $orange
+
+.list-messengers
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 43px 0 0
+
+  li
+    margin: 0 4px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      width: 60px
+      height: 60px
+      display: flex
+      align-items: center
+      justify-content: center
+
+.cooperation-box
+  max-width: 420px
+  width: 100%
+  font-size: 14px
+  color: #111
+
+  .box-text
+    letter-spacing: 0.2px
+    font-size: 14px
+    margin: 28px 0 30px
+
+  h3
+    font-size: 20px
+    font-weight: 700
+    color: #111
+    margin: 0 0 28px
+
+.cooperation-box__manager
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 30px 0 0
+  width: 100%
+
+
+.cooperation-box__manager-photo
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 64px
+  height: 64px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.cooperation-box__manager-text
+  width: calc(100% - 64px)
+  padding: 0 0 0 18px
+  letter-spacing: 0.2px
+
+  a
+    color: #111
+
+
+.cooperation-box__manager-name
+  margin: 0 0 22px
+
+//maps-section
+.maps-section
+  position: relative
+
+.map
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.25)
+    z-index: 1
+
+  iframe
+    width: 100%
+    height: 100%
+
+.maps-section-box
+  position: relative
+  z-index: 1
+  background: #fff
+  margin: 106px 0 173px
+  max-width: 307px
+  width: 100%
+  border-radius: 16px
+  padding: 38px 37px 40px
+  letter-spacing: 0.3px
+  font-size: 14px
+  color: #111
+  line-height: 22px
+
+  h3
+    line-height: 28px
+    font-weight: bold
+    font-size: 20px
+    margin: 0 0 24px
+
+.maps-section-box__item
+  margin: 0 0 32px
+
+  &:last-child
+    margin: 0
+
+//reviews
+.page-reviews
+  padding: 84px 0 40px
+
+.all-rating
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin: 16px 0 40px
+  color: #111111
+  font-size: 18px
+
+  .svg-icon
+    width: 16px
+    height: 16px
+    min-width: 16px
+    margin: 0 4px 0 0
+    fill: #FF7337
+
+.reviews-box
+  margin: 0 0 40px
+  letter-spacing: 0.2px
+  font-size: 14px
+  color: #000
+  line-height: 24px
+
+  h4
+    font-weight: 600
+
+  &__top
+    display: flex
+    align-items: center
+    margin: 0 0 24px
+    line-height: 18px
+
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 64px
+    height: 64px
+    min-width: 64px
+    margin: 0 16px 0 0
+    background: #F1F1F1
+
+  &__date
+    color: #6B6B6B
+    font-size: 12px
+
+.read-more
+  letter-spacing: 0.3px
+  text-decoration: underline
+  color: #000
+
+  &:hover
+    color: $orange
+
+.page-checkout
+  padding: 17px 0 49px
+
+.checkout-block
+  h3
+    margin: 32px 0 16px
+    font-size: 18px
+    font-weight: 500
+
+  .box-text
+    max-width: 616px
+    width: 100%
+    font-size: 14px
+    letter-spacing: 0.2px
+
+    p
+      margin: 0 0 13px
+
+      &:last-child
+        margin: 0
+
+    strong
+      font-size: 14px
+      font-weight: 600
+      letter-spacing: 0.3px
+
+.btn-next-checkout
+  margin: 60px 0 0
+
+.rassage-decoration
+  margin: 40px 0 0
+
+  h4
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 32px
+
+.rassage-decoration__list
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  margin: 40px 0
+
+.rassage-decoration__list-item
+  margin: 0 32px 0 0
+  max-width: 212px
+  transition: .3s ease
+  width: 100%
+  padding: 20px 26px 20px 24px
+  font-size: 14px
+  letter-spacing: 0.2px
+  cursor: pointer
+
+  .rassage-decoration__list-item-title
+    letter-spacing: 0.3px
+    font-size: 16px
+    color: #111
+    font-weight: 500
+
+  span
+    margin: 4px 0 0
+    display: block
+    color: #6B6B6B
+
+  &:last-child
+    margin: 0
+
+
+.checkout-block__bottom
+  width: 100%
+  padding: 32px 0 0
+  border-top: 1px solid #DEDEDE
+
+.checkout-block__hidden
+  display: none
+
+.input-check
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: #FFFFFF
+  padding: 0
+  z-index: -1
+  border: 1px solid #B0B0B0
+    radius: 16px
+  transition: .3s ease
+
+
+.label-checkbox
+  position: relative
+  z-index: 1
+
+.input-check:checked
+  border: 2px solid #00DDE1
+  background: #F1F1F1
+
+//page-certificates
+.page-certificates
+  padding: 50px 0
+
+.form-certificate
+  .box-text
+    margin: 40px 0 32px
+    font-size: 14px
+    letter-spacing: 0.2px
+    line-height: 21px
+    max-width: 495px
+    width: 100%
+
+.select-my
+  border: 1px solid #B0B0B0
+  width: 100%
+  height: 55px
+  max-width: 400px
+
+.select2-search--dropdown
+  display: none
+
+.form-certificate-item
+  margin: 0 0 32px
+
+  &:last-child
+    margin: 0
+
+  p
+    margin: 0 0 16px
+    font-size: 12px
+    color: #6B6B6B
+    width: 100%
+    letter-spacing: 0.2px
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: normal
+  padding: 0
+  color: #111111
+
+.select2-container--default .select2-selection--single
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 16px
+  border: 1px solid #B0B0B0
+    radius: 4px
+  color: #111111
+  height: 55px
+  font-size: 14px
+  letter-spacing: 0.2px
+  font-family: $default-font
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+  background: #F1F1F1
+  color: #000000
+
+.select2-container--default .select2-results__option--selected
+  background: transparent
+  font-weight: bold
+
+.select2-results__option
+  padding: 16px 40px
+  font-size: 16px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  background: url("../img/arrow-bottom.svg") no-repeat center
+    size: 100%
+  width: 24px
+  height: 24px
+  order: 1
+  position: relative
+  top: 0
+  right: 0
+
+  b
+    display: none
+
+.form-certificate-item__val
+  display: flex
+  align-items: center
+
+  .amount
+    margin: 0
+
+.form-certificate-icon
+  max-width: 32px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 32px 0 0
+
+.form-certificate-item__total
+  max-width: 507px
+  width: 100%
+  padding: 32px 0 0
+  margin: 40px 0 0
+  color: #111111
+  font-size: 18px
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  border-top: 1px solid #DEDEDE
+
+.form-certificate-img
+  max-width: 508px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    width: 100%
+
+.form-certificate-wrap
+  padding: 40px 0 0
+  margin: 40px 0 0
+  border-top: 1px solid #DEDEDE
+
+.form-certificate-wrap__box
+  h3
+    width: 100%
+    font-weight: 700
+    font-size: 18px
+    margin: 0 0 30px
+
+.tooltip-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  top: 50%
+  transform: translate(0, -50%)
+  right: 14px
+  width: 24px
+  height: 24px
+  fill: #000000
+  cursor: pointer
+
+.label-phone
+  max-width: 400px
+
+  input
+    padding: 0 16px 0 90px
+
+.phone-code
+  display: flex
+  align-items: center
+  left: 1px
+  padding: 0 16px
+  top: 50%
+  height: calc(100% - 2.5px)
+  transform: translate(0, -50%)
+  position: absolute
+  background: #ECECEC
+  border-radius: 4px 0 0 4px
+  color: #111111
+  font-size: 14px
+  letter-spacing: 0.2px
+
+.phone-code__country
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 8px 0 0
+  width: 20px
+  height: 20px
+
+.payment-variable-box
+  .box-text
+    margin: 0 0 28px
+    font-size: 14px
+    max-width: 432px
+
+  .label-checkbox
+    max-width: 400px
+    min-height: 171px
+    width: 100%
+    margin: 0 0 24px
+    display: flex
+    align-items: center
+    padding: 18px 30px 18px
+
+    &:last-child
+      margin: 0
+
+  .pay-icon
+    max-width: 82px
+    margin: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    mix-blend-mode: multiply
+
+  .label-checkbox__text
+    margin: 0
+    width: calc(100% - 82px)
+    padding: 0 0 0 25px
+    font-size: 14px
+
+  .rassage-decoration__list-item-title
+    margin: 0
+    font-size: 16px
+
+.links-doc
+  &:hover
+    color: #F65362
+
+//interesting-articles
+.interesting-articles
+  padding: 40px 0 20px
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%, 0)
+    height: 1px
+    opacity: .7
+    background: #DEDEDE
+    width: calc(100% - 30px)
+    max-width: 1264px
+
+  h2
+    margin: 0 0 40px
+
+.interesting-articles-box
+  margin: 0 0 20px
+  font-size: 13px
+  line-height: 20px
+
+  p
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+  &__body
+    padding: 32px 0 0
+
+  &__img
+    width: 100%
+    height: 215px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 6px
+    overflow: hidden
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__title
+    color: #000000
+    font-weight: bold
+    margin: 0 0 10px
+
+    &:hover
+      color: $orange
+
+//page-about
+.page-about
+  padding: 50px 0 35px
+
+  h1
+    margin: 0 0 24px
+
+  .box-text
+    max-width: 616px
+    width: 100%
+    line-height: 24px
+
+    ul
+      margin: 0 0 20px
+
+      li
+        margin: 0 0 10px
+
+        &:last-child
+          margin: 0
+
+    p
+      margin: 0 0 20px
+
+      &:last-child
+        margin: 0
+
+.about-img
+  max-width: 832px
+  height: 247px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 16px
+  overflow: hidden
+  margin: 22px 0 34px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-box
+  margin: 0 0 40px
+
+  &:last-child
+    margin: 0
+
+  h3
+    font-size: 20px
+    font-weight: bold
+    margin: 0 0 20px
+
+.sidebar-about
+  width: 100%
+  background: #fff
+  border: 1px solid #DEDEDE
+    radius: 16px
+  filter: drop-shadow(0px 4px 4px rgba(51, 51, 51, 0.04)) drop-shadow(0px 4px 16px rgba(51, 51, 51, 0.08))
+  padding: 30px 70px 56px 30px
+
+  h4
+    margin: 0 0 24px
+    font-size: 20px
+    font-weight: bold
+    display: flex
+    align-items: center
+
+    .svg-icon
+      width: 24px
+      height: 24px
+      min-width: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 7px 0 0
+
+  ul
+    flex-direction: column
+    align-items: flex-start
+    font-size: 14px
+
+    a
+      font-size: 16px
+
+    li
+      margin: 0 0 40px
+
+      &:last-child
+        margin: 0
+
+      &:before
+        top: 10px
+        transform: none
+
+.form-payment-tour
+  .select-my
+    max-width: 616px
+    width: 100%
+
+  .select2-container--default .select2-selection--single
+    background: rgba(236, 236, 236, 0.5)
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    color: #6B6B6B
+
+  .checkbox-inp:checked + .checkbox-custom
+    background: #F65362
+
+  .checkbox-custom
+    margin: 0 16px 0 0
+
+  .checkbox
+    font-size: 12px
+    margin: 0 0 16px
+
+    a
+      font-size: 12px
+
+  button, .button
+    margin: 24px 0 0
+
+  .form-certificate-wrap
+    margin: 0
+
+.page-payment-tour
+  h1
+    margin: 0 0 40px
+
+.total-position
+  display: flex
+  align-items: center
+  margin: 0 0 24px
+  color: #111111
+  font-size: 16px
+  letter-spacing: 0.3px
+  line-height: 24px
+  font-weight: 500
+
+  &__icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 30px 0 0
+
+.total-sum
+  font-size: 20px
+  font-weight: bold
+  margin: 0 0 14px
+
+.label-code
+  margin: 16px 0 0
+  max-width: 400px
+
+  input
+    background: #FFFFFF
+
+.links-edit
+  margin: 0 0 32px
+
+.form-booking
+  .form-certificate-wrap__box-total
+    margin: 0 0 16px
+
+  .number-of-guests
+    max-width: 302px
+    width: 100%
+    margin: 0 0 24px
+    padding: 0
+    border: none
+
+    &__icon
+      width: 14px
+      min-width: 14px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 17px 0 0
+
+
+.form-booking__total
+  width: 100%
+  padding: 24px 0 0
+  border-top: 1px solid rgba(#DEDEDE, .7)
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  p
+    color: #6B6B6B
+    font-size: 14px
+    margin: 0 24px 0 0
+
+  .sum
+    font-weight: bold
+    color: #111111
+    font-size: 20px
+
+.check-in-option
+  background: #FFFFFF
+  position: relative
+  z-index: 1
+  cursor: pointer
+  padding: 16px
+
+.check-in-option__inp
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: -1
+  border: 1px solid #DEDEDE
+    radius: 16px
+  background: transparent
+
+
+.check-in-option__top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 8px
+  color: #111111
+
+.check-in-option__top-title
+  font-size: 20px
+  font-weight: 600
+  letter-spacing: 0.3px
+  padding: 0 0 0 30px
+  line-height: 30px
+
+.price-check
+  font-weight: bold
+
+.check-in-option__item
+  padding: 24px 28px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  border-radius: 16px
+  background: #fff
+  margin: 0 25px 0 0
+  position: relative
+  max-width: 247px
+  width: 100%
+
+  &:last-child
+    margin: 0
+
+    &:before
+      display: none
+
+  &:before
+    content: ''
+    position: absolute
+    right: -14px
+    top: 50%
+    transform: translate(0, -50%)
+    width: 1px
+    height: 116px
+    background: #B0B0B0
+
+.check-in-option__icon
+  margin: 0 0 16px
+  width: 27px
+  height: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.check-in-option__text
+  display: block
+  margin: 0 0 26px
+  color: #6B6B6B
+  font-size: 14px
+
+  span
+    display: block
+    line-height: 21px
+
+.check-in-option__text-title
+  color: #111111
+  font-size: 16px
+  font-weight: 500
+  margin: 0 0 5px
+
+.check-in-option__bottom
+  margin: auto 0 0
+  display: flex
+  align-items: center
+
+.check-in-option__bottom-icon
+  display: flex
+  align-items: center
+  margin: 0 16px 0 0
+
+  &:last-child
+    margin: 0
+
+.check-in-option__inp-custom
+  margin: 0 24px 0 auto
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 32px
+  height: 32px
+  opacity: 0
+  visibility: hidden
+  transition: .3s ease
+
+.check-in-option__inp:checked
+  border: 2px solid #00DDE1
+
+  ~ .check-in-option__top .check-in-option__inp-custom
+    opacity: 1
+    visibility: visible
+
+.check-in-option__body
+  width: 100%
+  display: block
+
+.check-in-option__list
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.datepicker-wrapper
+  border: 1px solid #DEDEDE
+    radius: 30px
+  width: 100%
+  max-width: 832px
+  margin: 0 0 40px
+  overflow: hidden
+  padding: 40px 40px 26px
+
+  .datepicker-bottom
+    border: none
+    padding: 15px 0 0
+    font-size: 13px
+
+.hotel-variable
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.hotel-variable-check
+  position: relative
+  margin: 0 16px 24px 0
+  max-width: 388px
+  width: 100%
+  cursor: pointer
+  z-index: 1
+  padding: 8px 12px 8px 8px
+  border-radius: 16px
+  display: flex
+  align-items: flex-start
+
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100px
+    height: 107px
+    border-radius: 8px
+    overflow: hidden
+
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+  &__text
+    width: calc(100% - 100px)
+    padding: 0 0 0 8px
+
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 0 4px
+
+  &__price
+    font-weight: 600
+    letter-spacing: 0.1px
+    font-size: 12px
+
+  &__body
+    width: 100%
+    display: block
+    margin: 0 0 8px
+
+  &__bottom
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    flex-wrap: wrap
+
+  .links-details
+    margin: 0 17px 0 0
+    text-decoration: underline
+    color: #111111
+    font-size: 12px
+    letter-spacing: 0.2px
+
+  &__custom
+    position: relative
+    border: 1px solid #F65362
+      radius: 6px
+    height: 32px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: .3s ease
+    padding: 6px 12px
+    color: #F65362
+    font-size: 13px
+    letter-spacing: 0.1px
+
+    &:before
+      content: 'Выбрать'
+
+  &__title
+    width: 100%
+    font-size: 14px
+    letter-spacing: 0.3px
+
+    strong
+      display: block
+      font-weight: 600
+
+  &__inp
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #fff
+    z-index: -1
+    border: 1px solid #DEDEDE
+      radius: 16px
+
+    &:checked
+      border: 2px solid #00DDE1
+
+      ~ .hotel-variable-check__text
+        .hotel-variable-check__price
+          display: none
+
+        .hotel-variable-check__icon-check
+          display: flex
+
+        .links-details
+          color: #6B6B6B
+          text-decoration: none
+
+        .hotel-variable-check__custom
+          color: #6B6B6B
+          border: 1px solid #6B6B6B
+
+          &:before
+            content: 'Выбрано'
+
+  &:last-child
+    margin-right: 0
+
+.hotel-variable-check__icon-check
+  display: none
+  width: 16px
+  height: 16px
+  align-items: center
+  justify-content: center
+
+.rating
+  display: flex
+  align-items: center
+
+  .rating-icon
+    width: 14px
+    height: 14px
+    fill: #FFCB50
+    display: flex
+    align-items: center
+    justify-content: center
+
+.select-city-label
+  margin: 0
+  max-width: 150px
+  width: 100%
+
+  .select2-container--default .select2-selection--single
+    padding: 0
+    border: none
+      radius: 0
+    height: auto
+    width: 100%
+    max-width: 222px
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow
+    display: none
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered
+    color: #6B6B6B
+    font-size: 13px
+
+.custom-dropdown
+  border: none
+    radius: 24px
+  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.04), 0 4px 24px rgba(51, 51, 51, 0.24)
+  width: 384px !important
+  margin: 13px 0 0
+  overflow: hidden
+
+  .select2-results__option
+    font-size: 16px
+
+.select2-container--default
+  .custom-dropdown
+    .select2-results__options
+      max-height: 384px
+
+.select2-container--open .custom-dropdown
+  border-radius: 24px
+
+.select-city-label__mobile
+  display: none
+
+.mobile-menu
+  display: none
+  position: fixed
+  right: 0
+  top: 0
+  max-width: 280px
+  width: 100%
+  z-index: 5
+  background: #fff
+  padding: 40px 30px
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.03)
+  height: 100%
+  overflow-y: auto
+
+  .logo
+    margin: 0 auto 20px
+    max-width: 120px
+    width: 100%
+
+  .menu
+    li
+      margin: 0 0 20px
+
+  .phone
+    margin: 30px 0 0
+
+.btn-close-menu
+  position: absolute
+  right: 20px
+  top: 20px
+  width: 20px
+  height: 20px
+  cursor: pointer
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #6B6B6B
+    border-radius: 3px
+
+  &:before
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(135deg)
+
+//tour page
+.page-tour
+  padding: 18px 0 0
+
+  .subtitle
+    color: #000000
+    font-size: 24px
+    letter-spacing: 0.3px
+    font-weight: bold
+    margin: 0 0 16px
+
+  h1
+    color: #000000
+    font-weight: bold
+    margin: 0 0 24px
+
+.btn-load
+  width: fit-content
+
+.reviews-section
+  padding: 48px 0 32px
+
+  .btn-load
+    padding: 6px 12px
+
+.bg-grey
+  background: #F1F1F1
+
+.button-section
+  margin: 40px 0 0
+
+  .btn
+    width: 100%
+    padding: 24px
+    font-size: 18px
+    font-weight: 700
+    border-radius: 100px
+
+    &:hover
+      text-decoration: none
+      color: #fff
+      background: linear-gradient(129.54deg, #FF005E -74.11%, #F0B84B 102.85%)
+
+//information-important
+.information-important
+  padding: 32px 0
+
+  h2
+    margin: 0 0 32px
+
+.information-important-box
+  margin: 0 0 14px
+
+  h3
+    margin: 0 0 32px
+    font-size: 18px
+    font-weight: 700
+    color: #111111
+
+.information-important__list
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 24px
+
+  &-icon
+    width: 22px
+    height: 22px
+    min-width: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 16px 0 0
+    fill: #F65362
+
+.dates-tour
+  width: 100%
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.04), 0px 4px 24px rgba(51, 51, 51, 0.24)
+  border-radius: 16px
+  background: #fff
+
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    border-bottom: 1px solid #DEDEDE
+    padding: 16px 10px 18px
+
+  h3
+    color: #000000
+    font-size: 20px
+    letter-spacing: 0.3px
+    font-weight: 500
+
+  &__body
+    width: 100%
+    padding: 26px 40px 32px
+
+  h4
+    margin: 0 0 16px
+    font-weight: 500
+    color: #000000
+    letter-spacing: 0.3px
+
+  &__bottom
+    width: 100%
+    padding: 16px 40px 32px
+    border-top: 1px solid #DEDEDE
+
+  .box-text
+    color: rgba(17, 17, 17, 0.5)
+    font-size: 13px
+
+  .btn
+    margin: 16px auto 0
+    font-size: 14px
+
+.list-dates-tour
+  font-size: 13px
+  letter-spacing: 0.1px
+
+  li
+    margin: 0 0 8px
+
+    &:last-child
+      margin: 0
+
+
+.tour-details-info
+  padding: 32px 0
+
+.tour-details-info__box
+  padding: 0 0 32px
+  border-bottom: 1px solid #DEDEDE
+  margin: 0 0 32px
+
+  &:last-child
+    padding: 0
+    border: none
+    margin: 0
+
+  h2
+    margin: 0 0 32px
+
+.list-advantages-tour
+  color: #000000
+  letter-spacing: 0.3px
+
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 32px
+
+    &:last-child
+      margin: 0
+
+.advantages-tour__icon
+  width: 32px
+  height: 32px
+  display: flex
+  align-items: center
+  justify-content: center
+  min-width: 32px
+  fill: $red
+  margin: 0 16px 0 0
+
+.list-rating
+  display: flex
+  align-items: center
+  margin: 0 0 0 8px
+
+  li
+    margin: 0
+
+    .svg-icon
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 16px
+      height: 16px
+      fill: #FFD912
+
+.description-tour-text
+  max-width: 612px
+  width: 100%
+  margin: 0 0 12px
+  letter-spacing: 0.2px
+  font-size: 14px
+  line-height: 21px
+
+  p
+    margin: 0 0 20px
+    display: none
+
+    &:nth-child(-n+3)
+      display: block
+
+    &:last-child
+      margin: 0
+
+//tour-details-info__box-price
+.tour-details-info__box-price
+  border: none
+  padding: 0
+  margin: 0 0 40px
+
+.prices-tour
+  max-width: 832px
+  margin: 0 0 24px
+
+.prices-tour-box
+  width: 100%
+  border-bottom: 1px solid #6B6B6B
+
+  &:first-child
+    .prices-tour-box__row-name
+      padding-top: 0
+
+.prices-tour-box__row
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+
+.prices-tour-box__head
+  width: 20%
+  letter-spacing: 0.2px
+  font-size: 14px
+  color: #000
+
+  &:first-child
+    width: 40%
+
+  &:nth-child(even)
+    background: rgba(236, 236, 236, 0.25)
+
+  .price
+    padding: 0 32px
+    font-weight: bold
+    letter-spacing: 0.3px
+    margin: 0
+
+  span
+    font-size: 12px
+    display: block
+    font-weight: normal
+
+.prices-tour-box__icon
+  margin: 0 0 8px
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.prices-tour-box__row-top
+  .prices-tour-box__head
+    padding: 16px 1px 0 15px
+
+.prices-tour-box__row-name
+  padding: 32px 8px 16px 0
+
+  .list-rating
+    margin: 0 0 8px
+
+  h4
+    font-weight: 600
+
+  .btn
+    width: fit-content
+    margin: 8px 0 0
+    padding: 6px 12px
+
+.prices-tour-box__line
+  border-top: 1px solid #DEDEDE
+
+  .prices-tour-box__head
+    padding: 3px 0
+    display: flex
+    align-items: center
+
+.prices-tour-box__border
+  border: 1px solid rgba(236, 236, 236, 0.5)
+
+.prices-tour-box__img
+  display: none
+  align-items: center
+  justify-content: center
+  width: 103px
+  height: 107px
+  min-width: 103px
+  border-radius: 8px
+  overflow: hidden
+  position: absolute
+  left: 0
+  top: 0
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.program-box
+  margin: 0 0 48px
+
+  &:last-child
+    margin: 0
+
+  h3
+    margin: 0 0 30px
+    font-size: 20px
+    font-weight: 600
+
+.program-box__list
+  li
+    display: flex
+    align-items: flex-start
+
+    &:last-child
+      .program-box-description
+        &:after
+          display: none
+
+.program-box-time
+  max-width: 65px
+  min-width: 65px
+  margin: 0 28px 0 0
+  text-align: right
+  font-size: 14px
+  font-weight: 500
+  letter-spacing: 0.3px
+
+.program-box-description
+  position: relative
+  padding: 0 0 24px 30px
+  font-size: 16px
+  font-weight: 500
+  max-width: 550px
+  width: 100%
+  line-height: 24px
+
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 7px
+    background: #FF7337
+    width: 9px
+    height: 9px
+    border-radius: 50%
+    z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    width: .3px
+    height: 100%
+    background: #B0B0B0
+    left: 4px
+    top: 7px
+
+.mini-info
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 24px 0 7px
+
+  .all-rating
+    width: auto
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+
+.mini-info-box
+  display: flex
+  align-items: center
+  font-size: 14px
+  font-weight: 500
+
+  &:after
+    content: ''
+    display: inline-block
+    width: 3px
+    height: 3px
+    border-radius: 50%
+    background: #111111
+    margin: 0 10px
+
+  &:last-child
+    &:after
+      display: none
+
+  .svg-icon
+    fill: $red
+    margin: 0 6px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .svg-icon-map
+    fill: #000000
+    width: 14px
+    height: 14px
+    min-width: 14px
+
+.gallery-tour
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.gallery-tour-col
+  width: calc(33.3% - 8px)
+  height: 273px
+  overflow: hidden
+  position: relative
+  color: #fff
+  margin: 17px 0 0
+
+  &__btn
+    position: absolute
+    bottom: 25px
+    right: 26px
+    background: $orange
+    padding: 8px 16px
+    display: none
+    align-items: center
+    justify-content: center
+    border-radius: 6px
+    letter-spacing: 0.2px
+    font-size: 14px
+    font-weight: 600
+
+  &:hover
+    color: #fff
+
+    .gallery-tour-col__btn
+      display: flex
+
+  &:nth-child(3)
+    border-radius: 0px 16px 0px 0px
+
+  &:nth-last-child(3n)
+    border-radius: 0px 0px 0px 16px
+
+  &:first-child
+    border-radius: 16px 0px 0px 0px
+
+  &:last-child
+    border-radius: 0px 0px 16px 0px
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.gallery-tour__bottom
+  width: 100%
+  padding: 40px 0 16px
+  font-size: 14px
+  border-bottom: 1px solid #DEDEDE
+
+  .list-dots
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+.modal-info-tour
+  .modal-dialog
+    max-width: 596px
+
+  .modal-content
+    border-radius: 30px
+
+  .modal-body
+    padding: 40px 24px 24px 40px
+
+  .btn
+    margin: 38px 0 0 auto
+    width: fit-content
+    padding: 6px 12px
+
+    border-radius: 6px
+
+.modal-tour
+  font-size: 12px
+  line-height: 18px
+  letter-spacing: 0.3px
+
+  h4
+    margin: 0 0 24px
+    font-size: 14px
+    line-height: 21px
+    letter-spacing: 0.3px
+
+.list-number
+  counter-reset: item
+  margin: 40px 0 0
+  line-height: 18px
+
+  a
+    font-size: 12px
+    margin: 0 0 0 5px
+
+  li
+    display: inline-block
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      content: counters(item, ".") ". "
+      counter-increment: item
+      display: inline-block
+      margin: 0 5px 0 0
+
+.modal-gallery-tour
+  .modal-dialog
+    max-width: none
+    width: 100%
+
+  .modal-content
+    border-radius: 0
+
+  .modal-body
+    padding: 48px 0 104px
+    position: relative
+
+  button.close
+    width: 32px
+    height: 32px
+    opacity: 1
+    right: 32px
+    bottom: 32px
+    position: absolute
+    fill: #111
+    z-index: 1
+
+.modal-gallery__wrap
+  width: 100%
+
+.tour-slider-max
+  width: 100%
+
+  .tour-slider__item
+    height: 698px
+
+  .slick-arrow
+    background: rgba(255, 255, 255, 0.8)
+    border: 1px solid #DEDEDE
+    box-shadow: none
+
+    &:hover, &:focus
+      background: $orange
+
+  .slick-prev
+    left: -108px
+
+  .slick-next
+    right: -108px
+
+.tour-slider__item
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.tour-slider-preview
+  width: 100%
+  margin: 32px 0 0
+
+  .tour-slider__item
+    cursor: pointer
+    max-width: 155px
+    margin: 0 auto
+    height: 103px
+
+.counter-slide
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto 32px
+  letter-spacing: 0.3px
+  font-size: 14px
+  font-weight: 500
+
+.tour-slider-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  .tour-slider-max
+    max-width: 724px
+    .tour-slider__item
+      height: 482px
+    .slick-next
+      right: -32px
+    .slick-prev
+      left: -32px
+  .tour-slider-info
+    width: calc(100% - 724px)
+    padding: 0 0 0 80px
+    line-height: 21px
+    font-size: 14px
+    p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0
+
+
+.tour-slider-top
+  width: 100%
+  margin: 0 0 16px
+  .svg-icon-map
+    width: 14px
+    height: 14px
+    min-width: 14px
+    margin: 0 4px 0 0
+  .list-dots
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    font-size: 16px
+  a
+    font-size: 14px
+
+.tour-slider-title
+  display: flex
+  align-items: center
+  margin: 0 0 4px
+  h3
+    font-size: 18px
+    font-weight: bold
+
+.map-location-tour
+  width: 100%
+  height: 668px
+  iframe
+    width: 100%
+    height: 100%
+
+.modal-gallery-map
+  .modal-body
+    padding: 0
+
+.gallery-tour__bottom-wrap
+  margin: 25px 0 0
+  .btn-group
+    flex-direction: column
+    .btn
+      margin: 0 0 9px
+      border-radius: 100px
+    .btn-border
+      color: #000000
+
+  .price
+    font-size: 14px
+    font-weight: 700
+    margin: 0
+  .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
+    border-radius: 100px
+
+@import "media"
+// Всегда в конце
